@@ -19,6 +19,6 @@ public class User : BaseEntities
     public UserRole Role { get; set; }
     
     //navigation
-    public List<Exem>? Exems { get; set; }
+    public List<StudentExemResult>? StudentExemResults { get; set; }
     
 }

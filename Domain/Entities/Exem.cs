@@ -11,5 +11,5 @@ public class Exem : BaseEntities
     
     public List<Question>?  Questions { get; set; }
     
-    public List<User>?  Users { get; set; }
+    public List<StudentExemResult>?  StudentExemResults { get; set; }
 }

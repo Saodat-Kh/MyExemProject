@@ -10,4 +10,6 @@ public class Question : BaseEntities
     //navigation
     public int? ExemId { get; set; }
     public Exem? Exem { get; set; }
+    
+    public List<AnswerOption>? AnswerOptions { get; set; }
 }
