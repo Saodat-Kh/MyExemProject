@@ -1,6 +1,6 @@
 ﻿namespace Application.Dto.AnswerOption;
 
-public class UpdateAnswerDto
+public class UpdateAnswerOptionDto
 {
     public string? Text { get; set; }
     public bool? IsCorrect  { get; set; } 

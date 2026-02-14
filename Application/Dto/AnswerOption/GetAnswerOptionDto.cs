@@ -1,6 +1,6 @@
 ﻿namespace Application.Dto.AnswerOption;
 
-public class GetAnswerDto
+public class GetAnswerOptionDto
 {
     public int Id { get; set; }
     public string Text { get; set; }

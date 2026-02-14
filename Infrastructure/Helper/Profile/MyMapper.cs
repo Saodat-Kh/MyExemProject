@@ -13,12 +13,19 @@ public class MyMapper : AutoMapper.Profile
 {
     public MyMapper() 
     {
-        CreateMap<User,CreateStudentWithPagination>().ReverseMap();
+        CreateMap<User,CreateUserDto>().ReverseMap();
+        CreateMap<User, GetUserDto>().ReverseMap();
         CreateMap<Course, CreateCourseDto>().ReverseMap();
+        CreateMap<Course,GetCourseDto>().ReverseMap();
         CreateMap<Lesson, CreateLessonDto>().ReverseMap();
+        CreateMap<Lesson, GetLessonDto>().ReverseMap();
         CreateMap<Exem, CreateExemDto>().ReverseMap();
+        CreateMap<Exem, GetExemDto>().ReverseMap();
         CreateMap<Question, CreateQuestionDto>().ReverseMap();
-        CreateMap<AnswerOption, CreateAnswerDto>().ReverseMap();
+        CreateMap<Question, GetQuestionDto>().ReverseMap();
+        CreateMap<AnswerOption, CreateAnswerOptionDto>().ReverseMap();
+        CreateMap<AnswerOption,GetAnswerOptionDto>().ReverseMap();
         CreateMap<StudentExemResult, CreateStudentExemResultDto>().ReverseMap();
+        CreateMap<StudentExemResult, GetStudentExemResultDto>().ReverseMap();
     }
 }
