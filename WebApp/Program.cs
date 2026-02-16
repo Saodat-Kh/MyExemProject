@@ -20,6 +20,7 @@ builder.Services.AddScoped<IExemService, ExamService>();
 builder.Services.AddScoped<IQuestionService, QuestionService>();
 builder.Services.AddScoped<IAnswerService, AnswerService>();
 
+
 builder.Services.AddAutoMapper(typeof(MyMapper));
 var app = builder.Build();
 

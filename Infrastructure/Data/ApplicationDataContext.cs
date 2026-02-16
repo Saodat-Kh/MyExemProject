@@ -22,6 +22,8 @@ public class ApplicationDataContext(DbContextOptions<ApplicationDataContext> opt
         modelBuilder.Entity<Question>().HasMany(z=> z.AnswerOptions).WithOne(z=> z.Question).HasForeignKey(z=>z.QuestionId);
         modelBuilder.Entity<User>().HasMany(x=> x.StudentExemResults).WithOne(c=> c.Student).HasForeignKey(c=>c.StudentId);
         modelBuilder.Entity<Exem>().HasMany(x=> x.StudentExemResults).WithOne(c=> c.Exem).HasForeignKey(c=>c.ExemId);
+        modelBuilder.Entity<User>().HasMany(x => x.StudentCourse).WithOne(z => z.User).HasForeignKey(a => a.StudentId);
+        modelBuilder.Entity<Course>().HasMany(x=> x.StudentCourse).WithOne(z=> z.Course).HasForeignKey(z=>z.CourseId);
     }
 
  

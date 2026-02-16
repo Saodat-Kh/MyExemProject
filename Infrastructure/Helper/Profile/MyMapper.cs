@@ -3,6 +3,7 @@ using Application.Dto.Course;
 using Application.Dto.Exem;
 using Application.Dto.Lesson;
 using Application.Dto.Question;
+using Application.Dto.StudentCourse;
 using Application.Dto.StudentExemResult;
 using Application.Dto.User;
 using Domain.Entities;
@@ -27,5 +28,7 @@ public class MyMapper : AutoMapper.Profile
         CreateMap<AnswerOption,GetAnswerOptionDto>().ReverseMap();
         CreateMap<StudentExemResult, CreateStudentExemResultDto>().ReverseMap();
         CreateMap<StudentExemResult, GetStudentExemResultDto>().ReverseMap();
+        CreateMap<Course, GetStudentCourseDto>().ReverseMap();
+        CreateMap<User, GetStudentCourseSummaryDto>().ReverseMap();
     }
 }

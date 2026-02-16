@@ -18,4 +18,6 @@ public class Course : BaseEntities
     //navigation
     public List<Lesson>?  Lessons { get; set; }
     public List<Exem>?   Exems { get; set; }
+    
+    public List<StudentCourse>? StudentCourse { get; set; }
 }

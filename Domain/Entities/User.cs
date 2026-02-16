@@ -21,4 +21,7 @@ public class User : BaseEntities
     //navigation
     public List<StudentExemResult>? StudentExemResults { get; set; }
     
+    
+    public List<StudentCourse>? StudentCourse { get; set; }
+    
 }
